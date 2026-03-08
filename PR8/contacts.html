@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | Zen</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <style>
+    body { padding-top: 3.25rem; min-height: 100vh; display: flex; flex-direction: column; }
+    main { flex: 1; }
+  </style>
+</head>
+<body>
+  <nav class="navbar is-fixed-top is-white">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold" href="index.html">Zen</a>
+      </div>
+      <div class="navbar-menu is-active">
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html">Главная</a>
+          <a class="navbar-item has-text-success has-text-weight-bold" href="contacts.html">Контакты</a>
+          <a class="navbar-item" href="faq.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-2">Оставьте отзыв</h1>
+        <div class="columns">
+          <div class="column is-6">
+            <form>
+              <div class="field">
+                <label class="label">Имя</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Ваше имя" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="email" placeholder="example@email.com" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Тема</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select required>
+                      <option value="" disabled selected>Выберите тему</option>
+                      <option>Предложение</option>
+                      <option>Жалоба</option>
+                      <option>Вопрос</option>
+                      <option>Благодарность</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Сообщение</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Ваше сообщение..." rows="5" required></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <label class="checkbox">
+                  <input type="checkbox" required>
+                  Согласие на обработку данных
+                </label>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <button class="button is-primary" type="submit">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="column is-6">
+            <div class="content">
+              <h2 class="title is-4">Контакты</h2>
+              <p>Москва, ул. Примерная, 123</p>
+              <p>+7 (999) 123-45-67</p>
+              <p>info@example.com</p>
+              <p><a href="#">Telegram</a> <a href="#">VK</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p><a href="index.html">Главная</a> · <a href="contacts.html">Контакты</a> · <a href="faq.html">FAQ</a></p>
+      <p>zen@example.com</p>
+    </div>
+  </footer>
+</body>
+</html>
